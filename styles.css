@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #333;
+}
+
+.background-container {
+    background-image: url('image.png'); /* Replace with your background image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #555;
+    display: block;
+}
+
+input[type="number"],
+input[type="text"],
+select,
+input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #11164a;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #9900ff;
+}
+
+/* CSS untuk SweetAlert */
+
+.swal-title {
+    font-size: 18px !important;
+    font-weight: bold !important;
+    margin-bottom: 10px !important;
+    text-align: center !important;
+}
+
+.swal-content {
+    text-align: left !important;
+}
+
+.swal-html-container {
+    text-align: left !important;
+}
+
+.swal-confirm-button, .swal-cancel-button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 120px; /* Lebar tombol */
+}
+
+.swal-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Jarak antar tombol */
+}
+
+.swal-popup {
+    width: 80%; /* Lebar popup, bisa disesuaikan */
+    max-width: 600px; /* Maksimum lebar popup */
+}
+
+.swal-content .form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.swal-content .form-group label {
+    width: 140px;
+    text-align: right;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+.swal-content .form-group input[type="text"] {
+    flex-grow: 1;
+    margin-left: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.swal-content .form-group input[type="text"]:read-only {
+    background-color: #f0f0f0; /* Warna latar belakang untuk input readonly */
+    border-color: #ccc;
+}
+
+/* Responsif untuk SweetAlert */
+@media screen and (max-width: 768px) {
+    .swal-popup {
+        width: 90%; /* Lebar popup di layar kecil */
+    }
+
+    .swal-content .form-group label {
+        width: auto; /* Atur ulang lebar label agar fleksibel */
+    }
+}
+
